@@ -1,0 +1,24 @@
+
+@import "tailwindcss";
+@import "./font-vazirmatn.css";
+
+@theme {
+  --font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans: ui-sans-serif, system-ui, sans-serif, var(--font-emoji);
+  --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif, var(--font-emoji);
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace,
+    var(--font-emoji);
+
+  --default-font-family: var(--font-vazirmatn);
+  --color-primary: #234e70;
+  --color-secondary: #010101;
+}
+
+/* .text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+} */
