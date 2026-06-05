@@ -1,5 +1,6 @@
 
 @import "tailwindcss";
+@import "./color.css"
 @import "./font-vazirmatn.css";
 
 @theme {
@@ -11,8 +12,6 @@
     var(--font-emoji);
 
   --default-font-family: var(--font-vazirmatn);
-  --color-primary: #234e70;
-  --color-secondary: #010101;
 }
 
 /* .text-primary {

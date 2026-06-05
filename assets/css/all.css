@@ -370,10 +370,10 @@
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-vazirmatn);
     --default-mono-font-family: var(--font-mono);
-    --font-vazirmatn: vazirmatn-vf, vazirmatn, var(--font-sans);
-    --font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --color-primary: #234e70;
-    --color-secondary: #010101;
+    --color-secondary: #51606f;
+    --color-shadow: #000;
+    --font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
 
@@ -2619,6 +2619,10 @@
     color: var(--color-primary);
   }
 
+  .text-shadow {
+    color: var(--color-shadow);
+  }
+
   .capitalize {
     text-transform: capitalize;
   }
@@ -3089,88 +3093,6 @@
 
   .transform-view {
     transform-box: view-box;
-  }
-}
-
-@layer base {
-  @font-face {
-    font-family: vazirmatn-vf;
-    font-weight: 100 900;
-    src: url("../fonts/vazirmatn/vazirmatn[wght].woff2") format(woff2 supports variations), url("../fonts/vazirmatn/vazirmatn[wght].woff2") format(woff2-variations);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 100;
-    src: url("../fonts/vazirmatn/vazirmatn-100.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 200;
-    src: url("../fonts/vazirmatn/vazirmatn-200.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 300;
-    src: url("../fonts/vazirmatn/vazirmatn-300.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 400;
-    src: url("../fonts/vazirmatn/vazirmatn-400.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 500;
-    src: url("../fonts/vazirmatn/vazirmatn-500.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 600;
-    src: url("../fonts/vazirmatn/vazirmatn-600.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 700;
-    src: url("../fonts/vazirmatn/vazirmatn-700.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 800;
-    src: url("../fonts/vazirmatn/vazirmatn-800.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
-  }
-
-  @font-face {
-    font-family: vazirmatn;
-    font-weight: 900;
-    src: url("../fonts/vazirmatn/vazirmatn-900.woff2") format(woff2);
-    font-display: block;
-    unicode-range: U+6??, U+750-77f, U+8a0-8ff, U+fb50-fdff, U+fe70-feff, U+1ee??;
   }
 }
 
