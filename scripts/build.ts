@@ -9,7 +9,7 @@ await Bun.build({
   naming: "all.css", // output to style.css or page.css
   minify: false,
   plugins: [tailwindPlugin],
-  external: ["*.woff2", "*.woff", "*.ttf", "*.eot"]
+  external: ["*.woff2", "*.woff", "*.ttf", "*.eot", "*.svg"]
 });
 
 console.log("📦 Applying autoprefixer...");
