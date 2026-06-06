@@ -6,12 +6,9 @@
   <title>محمد خدادادی | portfolio</title>
   <link rel="stylesheet" href="./assets/css/all.css">
 </head>
-<body class="bg-gray-100">
-  <div class="max-w-2xl mx-auto px-4 py-12">
-    
-    <!-- card -->
-    <div class="bg-white rounded-2xl shadow p-8">
-      
+<body class="bg-surface min-h-screen">
+  <div class="mx-auto max-w-11/12 grid grid-cols-1 md:grid-cols-6 gap-4 my-10">  
+    <div class="col-span-2">
       <h1
         class="sr-only"
       >
@@ -23,28 +20,28 @@
           alt="پروفایل"
           class="max-w-80 max-h-80 aspect-square object-cover object-top
           mask-[url('../images/cloud-stretch.svg')] mask-cover mask-center
-          bg-radial-[circle_at_center] from-primary to-secondary"
+          bg-radial from-[#5f6b6a] from-20% to-[#3a4447] to-65%
+          contrast-105"
         >
       </div>
-      <div class="flex justify-center">
-        <img
-          alt="محمد خدادادی"
+    </div>
+
+    <!-- about -->
+    <div class="md:col-span-4">
+    
+      <div class="flex md:justify-start justify-center">
+        <div 
           title="محمد خدادادی"
-          src="/assets/images/logotype.png"
-          class="w-70"
-        />
+          class="w-72 h-20 bg-primary mask-[url('/assets/images/logotype.svg')] mask-no-repeat mask-center mask-cover"
+        ></div>
       </div>
       
       <!-- title -->
-      <p class="text-center text-primary text-sm mt-1">
+      <h2 class="md:text-start text-center text-primary text-base sm:text-lg md:text-2xl font-bold mt-1 mb-10">
         حل کننده گره های کسب و کارهای آنلاین
-      </p>
+      </h2>
 
-      <!-- line -->
-      <div class="border-t border-gray-200 my-6"></div>
-
-      <!-- about -->
-      <p class="text-center text-gray-700 leading-relaxed">
+      <p class="md:text-start text-center text-gray-700 leading-relaxed">
         من وقتی وارد یک کسب‌وکار آنلاین می‌شوم، گره‌هایی را باز می‌کنم که دیگران در آنها گیر کرده‌اند. فرقی نمی‌کند گره فنی باشد، فرآیندی باشد یا انسانی. 
       </p>
 
@@ -53,33 +50,35 @@
         <span class="text-2xl text-primary absolute left-2 bottom-0">"</span>
         هدف من یک چیز است: راه انداختن دوباره سیستم شما، درست و پایدار.
       </blockquote>
-      <!-- what i do -->
-      <div class="mt-5">
-        <h3 class="font-bold text-gray-800 mb-2">چه کاری از من برمیاد؟</h3>
-        <ul class="space-y-2 text-gray-700 text-sm">
-          <li class="flex items-start gap-2">
-            <span class="text-primary">✓</span>
-            شناسایی ریشه واقعی مشکل، نه سطح آن
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="text-primary">✓</span>
-            حل پایدار مسئله بدون ایجاد گره جدید
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="text-primary">✓</span>
-            طراحی سیستمی که دیگر نیاز به من نداشته باشد
-          </li>
-        </ul>
-      </div>
+    </div>
+  </div>
+    
 
-      <!-- contact -->
-      <div class="mt-6 text-center text-sm text-gray-500">
-        <p>با من در ارتباط باشید</p>
-      </div>
-
+    
+    <!-- what i do -->
+    <div class="mt-5">
+      <h3 class="font-bold text-gray-800 mb-2">چه کاری از من برمیاد؟</h3>
+      <ul class="space-y-2 text-gray-700 text-sm">
+        <li class="flex items-start gap-2">
+          <span class="text-primary">✓</span>
+          شناسایی ریشه واقعی مشکل، نه سطح آن
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary">✓</span>
+          حل پایدار مسئله بدون ایجاد گره جدید
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary">✓</span>
+          طراحی سیستمی که دیگر نیاز به من نداشته باشد
+        </li>
+      </ul>
     </div>
 
-  </div>
+    <!-- contact -->
+    <div class="mt-6 text-center text-sm text-gray-500">
+      <p>با من در ارتباط باشید</p>
+    </div>
+
 
 </body>
 </html>
