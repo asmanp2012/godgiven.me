@@ -2,10 +2,12 @@
   "name": "godgiven.me",
   "private": true,
   "scripts": {
-    "w": "bun run watch",
+    "w": "bun run --parallel watch serve",
+    "s": "bun run serve",
     "b": "bun run build:css",
     "watch": "bun ./scripts/build.ts --watch",
-    "build:css": "bun ./scripts/build.ts"
+    "build:css": "bun ./scripts/build.ts",
+    "serve": "bun ./scripts/serve.ts"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.0",
