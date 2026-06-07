@@ -996,6 +996,10 @@
     field-sizing: fixed;
   }
 
+  .aspect-9\/2 {
+    aspect-ratio: 9 / 2;
+  }
+
   .aspect-square {
     aspect-ratio: 1;
   }
@@ -1003,10 +1007,6 @@
   .size-auto {
     width: auto;
     height: auto;
-  }
-
-  .h-20 {
-    height: calc(var(--spacing) * 20);
   }
 
   .h-auto {
@@ -1049,8 +1049,8 @@
     min-height: 100vh;
   }
 
-  .w-72 {
-    width: calc(var(--spacing) * 72);
+  .w-70 {
+    width: calc(var(--spacing) * 70);
   }
 
   .w-auto {
@@ -1065,8 +1065,8 @@
     max-width: 91.6667%;
   }
 
-  .max-w-80 {
-    max-width: calc(var(--spacing) * 80);
+  .max-w-full {
+    max-width: 100%;
   }
 
   .max-w-none {
