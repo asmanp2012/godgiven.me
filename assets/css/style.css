@@ -14,10 +14,6 @@
   --default-font-family: var(--font-vazirmatn);
 }
 
-/* .text-primary {
-  color: var(--color-primary);
+@utility godgiven-container {
+  @apply mx-auto max-w-11/12;
 }
-
-.text-secondary {
-  color: var(--color-secondary);
-} */
