@@ -754,22 +754,6 @@
     position: sticky;
   }
 
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
-
-  .right-2 {
-    right: calc(var(--spacing) * 2);
-  }
-
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
-
   .isolate {
     isolation: isolate;
   }
@@ -864,13 +848,10 @@
     }
   }
 
-  .mx-auto {
+  .godgiven-container {
+    max-width: 91.6667%;
     margin-inline-start: auto;
     margin-inline-end: auto;
-  }
-
-  .my-4 {
-    margin-block: calc(var(--spacing) * 4);
   }
 
   .my-10 {
@@ -885,12 +866,24 @@
     margin-top: calc(var(--spacing) * 5);
   }
 
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
   }
 
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
+  }
+
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+
+  .mb-30 {
+    margin-bottom: calc(var(--spacing) * 30);
   }
 
   .box-border {
@@ -1056,10 +1049,6 @@
 
   .w-screen {
     width: 100vw;
-  }
-
-  .max-w-11\/12 {
-    max-width: 91.6667%;
   }
 
   .max-w-full {
@@ -1519,18 +1508,12 @@
     justify-items: stretch;
   }
 
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
-
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
 
-  :where(.space-y-2 > :not(:last-child)) {
-    --tw-space-y-reverse: 0;
-    margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
-    margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
 
   :where(.space-y-reverse > :not(:last-child)) {
@@ -1668,6 +1651,10 @@
 
   .rounded {
     border-radius: .25rem;
+  }
+
+  .rounded-lg {
+    border-radius: var(--radius-lg);
   }
 
   .rounded-s:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
@@ -1879,12 +1866,6 @@
     border-block-end-width: 1px;
   }
 
-  .border-y-2 {
-    border-block-style: var(--tw-border-style);
-    border-block-start-width: 2px;
-    border-block-end-width: 2px;
-  }
-
   .border-s {
     border-inline-start-style: var(--tw-border-style);
     border-inline-start-width: 1px;
@@ -1945,18 +1926,8 @@
     border-style: solid;
   }
 
-  .border-primary\/70 {
-    border-color: #006879b3;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .border-primary\/70 {
-      border-color: color-mix(in oklab, var(--color-primary) 70%, transparent);
-    }
-  }
-
-  .bg-gray-50 {
-    background-color: var(--color-gray-50);
+  .border-primary {
+    border-color: var(--color-primary);
   }
 
   .bg-primary {
@@ -1965,6 +1936,10 @@
 
   .bg-surface {
     background-color: var(--color-surface);
+  }
+
+  .bg-white {
+    background-color: var(--color-white);
   }
 
   .-bg-conic, .bg-conic {
@@ -2432,8 +2407,16 @@
     object-position: top;
   }
 
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
 
   .text-center {
@@ -2492,9 +2475,9 @@
     vertical-align: top;
   }
 
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
 
   .text-base {
@@ -2502,19 +2485,14 @@
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
 
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
-  }
-
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
   }
 
   .font-semibold {
@@ -2618,24 +2596,24 @@
     white-space: pre-wrap;
   }
 
-  .text-gray-500 {
-    color: var(--color-gray-500);
-  }
-
   .text-gray-700 {
     color: var(--color-gray-700);
-  }
-
-  .text-gray-800 {
-    color: var(--color-gray-800);
   }
 
   .text-primary {
     color: var(--color-primary);
   }
 
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
   .text-shadow {
     color: var(--color-shadow);
+  }
+
+  .text-white {
+    color: var(--color-white);
   }
 
   .capitalize {
@@ -2851,6 +2829,11 @@
 
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
@@ -3115,6 +3098,30 @@
     transform-box: view-box;
   }
 
+  @media (hover: hover) {
+    .hover\:bg-primary:hover {
+      background-color: var(--color-primary);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-white:hover {
+      color: var(--color-white);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:opacity-90:hover {
+      opacity: .9;
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:flex-row {
+      flex-direction: row;
+    }
+  }
+
   @media (min-width: 40rem) {
     .sm\:text-lg {
       font-size: var(--text-lg);
@@ -3125,6 +3132,12 @@
   @media (min-width: 48rem) {
     .md\:col-span-4 {
       grid-column: span 4 / span 4;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 
