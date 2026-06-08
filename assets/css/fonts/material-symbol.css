@@ -1,0 +1,28 @@
+@layer base {
+
+  @font-face {
+    font-family: material-symbol-rounded;
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src: url('../../fonts/material-symbol/material-symbol-rounded-var.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: material-symbol-outlined;
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src: url('../../fonts/material-symbol/material-symbol-outlined-var.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: material-symbol-sharp;
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src: url('../../fonts/material-symbol/material-symbol-sharp-var.woff2') format('woff2');
+  }
+
+  /* TODO: fallback for browsers not support woff2-variations */
+}

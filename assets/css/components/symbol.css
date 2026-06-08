@@ -1,0 +1,50 @@
+@theme default {
+  --material-symbol-style: 'material-symbol-rounded';
+}
+
+@layer components {
+  .symbol {
+    @apply block
+      shrink-0
+      grow-0
+      box-content
+      whitespace-nowrap
+      break-normal
+      align-middle
+      text-[24px]
+      size-[1em]
+      overflow-clip
+      antialiased
+      contain-strict
+      select-none
+      normal-case!
+      not-italic!
+      leading-none!
+      tracking-normal!;
+
+    font-family: var(--material-symbol-style);
+    direction: ltr;
+    word-wrap: normal;
+    font-weight: var(--material-symbol-weight, 300) !important;
+    font-feature-settings: 'liga';
+    font-variation-settings:
+      'FILL' var(--material-symbol-fill, 0),
+      'wght' var(--material-symbol-weight, 300),
+      'GRAD' var(--material-symbol-grade, 0);
+
+    &[fill] {
+      --material-symbol-fill: 1;
+    }
+
+    &[auto-fill][aria-selected='true'],
+    [aria-selected='true'] &[auto-fill] {
+      --material-symbol-fill: 1;
+    }
+  }
+
+  svg.symbol {
+    font-family: inherit;
+    font-feature-settings: normal;
+    font-variation-settings: unset;
+  }
+}
