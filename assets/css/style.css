@@ -1,7 +1,8 @@
 
 @import "tailwindcss";
 @import "./color.css";
-@import "./font-vazirmatn.css";
+@import "./fonts/vazirmatn.css";
+
 
 @theme {
   --font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
