@@ -374,6 +374,7 @@
     --color-surface: #f8fafd;
     --color-shadow: #000;
     --font-vazirmatn: vazirmatn-vf, vazirmatn, var(--font-sans);
+    --material-symbol-style: "material-symbol-rounded";
     --font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
@@ -851,6 +852,10 @@
     max-width: 91.6667%;
     margin-inline-start: auto;
     margin-inline-end: auto;
+  }
+
+  .my-0 {
+    margin-block: calc(var(--spacing) * 0);
   }
 
   .my-10 {
@@ -2410,8 +2415,8 @@
     object-position: top;
   }
 
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
 
   .px-6 {
@@ -2422,8 +2427,8 @@
     padding-block: calc(var(--spacing) * 3);
   }
 
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
   }
 
   .text-center {
@@ -2616,13 +2621,13 @@
     color: var(--color-primary);
   }
 
-  .text-primary\/50 {
-    color: #00687980;
+  .text-primary\/70 {
+    color: #006879b3;
   }
 
   @supports (color: color-mix(in lab, red, red)) {
-    .text-primary\/50 {
-      color: color-mix(in oklab, var(--color-primary) 50%, transparent);
+    .text-primary\/70 {
+      color: color-mix(in oklab, var(--color-primary) 70%, transparent);
     }
   }
 
@@ -3287,6 +3292,84 @@
   }
 }
 
+@layer base {
+  @font-face {
+    font-family: material-symbol-rounded;
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src: url("../fonts/material-symbol/material-symbol-rounded-var.woff2") format(woff2);
+  }
+
+  @font-face {
+    font-family: material-symbol-outlined;
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src: url("../fonts/material-symbol/material-symbol-outlined-var.woff2") format(woff2);
+  }
+
+  @font-face {
+    font-family: material-symbol-sharp;
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src: url("../fonts/material-symbol/material-symbol-sharp-var.woff2") format(woff2);
+  }
+}
+
+@layer components {
+  .symbol {
+    box-sizing: content-box;
+    display: block;
+    overflow: clip;
+    vertical-align: middle;
+    overflow-wrap: normal;
+    word-break: normal;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    contain: strict;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 24px;
+    font-family: var(--material-symbol-style);
+    direction: ltr;
+    word-wrap: normal;
+    font-feature-settings: "liga";
+    font-variation-settings: "FILL" var(--material-symbol-fill, 0), "wght" var(--material-symbol-weight, 300), "GRAD" var(--material-symbol-grade, 0);
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    --tw-leading: 1 !important;
+    --tw-tracking: var(--tracking-normal) !important;
+    letter-spacing: var(--tracking-normal) !important;
+    text-transform: none !important;
+    font-style: normal !important;
+    line-height: 1 !important;
+    font-weight: var(--material-symbol-weight, 300) !important;
+  }
+
+  .symbol[fill] {
+    --material-symbol-fill: 1;
+  }
+
+  .symbol[auto-fill][aria-selected="true"] {
+    --material-symbol-fill: 1;
+  }
+
+  [aria-selected="true"] .symbol[auto-fill] {
+    --material-symbol-fill: 1;
+  }
+
+  svg.symbol {
+    font-feature-settings: normal;
+    font-variation-settings: unset;
+    font-family: inherit;
+  }
+}
+
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -3717,6 +3800,11 @@
   initial-value: 100%;
 }
 
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -3831,6 +3919,7 @@
       --tw-contain-style: initial;
       --tw-text-shadow-color: initial;
       --tw-text-shadow-alpha: 100%;
+      --tw-tracking: initial;
     }
   }
 }
