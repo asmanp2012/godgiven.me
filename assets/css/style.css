@@ -17,5 +17,5 @@
 }
 
 @utility godgiven-container {
-  @apply mx-auto max-w-11/12;
+  @apply mx-auto max-w-11/12 w-11/12;
 }
